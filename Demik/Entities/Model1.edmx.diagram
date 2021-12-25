@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="586b1e4dadbb44ab8be6842a2af33fa6" Name="Diagram1">
+        <EntityTypeShape EntityType="DemikModel.Client" Width="1.5" PointX="0.75" PointY="7" />
+        <EntityTypeShape EntityType="DemikModel.ClientService" Width="1.5" PointX="3" PointY="9.125" />
+        <EntityTypeShape EntityType="DemikModel.DocumentByService" Width="1.5" PointX="5.25" PointY="9.625" />
+        <EntityTypeShape EntityType="DemikModel.Gender" Width="1.5" PointX="1.5" PointY="13" />
+        <EntityTypeShape EntityType="DemikModel.Manufacturer" Width="1.5" PointX="0.75" PointY="2.625" />
+        <EntityTypeShape EntityType="DemikModel.Product" Width="1.5" PointX="3" PointY="1.875" />
+        <EntityTypeShape EntityType="DemikModel.ProductPhoto" Width="1.5" PointX="5.25" PointY="5.75" />
+        <EntityTypeShape EntityType="DemikModel.ProductSale" Width="1.5" PointX="5.25" PointY="2.375" />
+        <EntityTypeShape EntityType="DemikModel.Role" Width="1.5" PointX="7.75" PointY="1" />
+        <EntityTypeShape EntityType="DemikModel.Service" Width="1.5" PointX="0.75" PointY="16.25" />
+        <EntityTypeShape EntityType="DemikModel.ServicePhoto" Width="1.5" PointX="3" PointY="18.75" />
+        <EntityTypeShape EntityType="DemikModel.sysdiagram" Width="1.5" PointX="7.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DemikModel.Tag" Width="1.5" PointX="3" PointY="15.875" />
+        <EntityTypeShape EntityType="DemikModel.User" Width="1.5" PointX="10" PointY="0.875" />
+        <AssociationConnector Association="DemikModel.FK_Client_Gender" />
+        <AssociationConnector Association="DemikModel.FK_ClientService_Client" />
+        <AssociationConnector Association="DemikModel.FK_ClientService_Service" />
+        <AssociationConnector Association="DemikModel.FK_DocumentByService_ClientService" />
+        <AssociationConnector Association="DemikModel.FK_ProductSale_ClientService" />
+        <AssociationConnector Association="DemikModel.FK_Product_Manufacturer" />
+        <AssociationConnector Association="DemikModel.FK_ProductPhoto_Product" />
+        <AssociationConnector Association="DemikModel.FK_ProductSale_Product" />
+        <AssociationConnector Association="DemikModel.FK_User_Role" />
+        <AssociationConnector Association="DemikModel.FK_ServicePhoto_Service" />
+        <AssociationConnector Association="DemikModel.AttachedProduct" />
+        <AssociationConnector Association="DemikModel.TagOfClient" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
